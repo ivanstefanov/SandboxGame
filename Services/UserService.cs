@@ -12,15 +12,14 @@ namespace SandboxGame.Services
     public class UserService
     {
         private UsersDataAdapter _usersDataAdapter;
-         
+
         public UserService()
         {
             _usersDataAdapter = new UsersDataAdapter();
         }
 
-        public void InserUser(string name, string role, string password)
-        {                        
-            User user = new User
+        public void InsertUser(string name, string role, string password)
+        {            User user = new User
             {
                 UserName = name,
                 UserRole = role,

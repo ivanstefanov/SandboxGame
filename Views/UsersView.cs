@@ -55,7 +55,7 @@ namespace SandboxGame.Views
             Console.WriteLine("Enter role:");
             string role = Console.ReadLine();
 
-            userService.InserUser(username, role, password);
+            userService.InsertUser(username, role, password);
         }
     }
 }
